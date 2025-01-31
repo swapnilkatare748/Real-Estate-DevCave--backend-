@@ -1,0 +1,28 @@
+.rentformRapper{
+    margin-top: -50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.RentForm{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.submit{
+       width: 20%;
+        right: 0%;
+       border-radius: 10px;
+       padding: 10px;
+        color: var(--white);
+        background-color: var(--green-pigment);
+        margin-left: 30px;
+}
+
+@media (max-width:1024px){
+    .submit{
+        margin: 0;
+        
+    }
+}

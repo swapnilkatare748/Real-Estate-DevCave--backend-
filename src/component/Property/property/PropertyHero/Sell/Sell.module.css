@@ -1,0 +1,70 @@
+.sell{
+    width: 70%;
+    height: 30vh;
+    z-index: 100;
+    margin: auto;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: -70px;
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 20px;
+    color: rgba(0, 0, 0, 0.47);
+}
+
+.sell>h3{
+    text-align: start;
+    padding: 5px;
+    border-bottom: 1px solid;
+}
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+    margin-top: 10px;
+}
+
+.form>label{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-direction: column;
+    font-size: large
+}
+.form >select{
+    padding: 5px 20px;
+    width: 8rm;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.47);
+    border-radius: 4px;
+}
+form > label >input{
+    width: 90%;
+}
+.submit{
+    padding:  5px 10px;
+    color:var(--white);
+    font-weight: 600;
+    position: absolute;
+    right: 10%;
+    bottom: -5%;
+     border-radius: 10px;
+    background-color: var(--green-pigment);
+}
+
+@media (max-width:1024px){
+    .submit{
+        position: relative;
+        width: 50%;
+    }
+    .sell{
+        height: auto;
+        align-items: center;
+        width: 90%;
+    }
+    .form>label{
+        width: 80%;
+    }
+}

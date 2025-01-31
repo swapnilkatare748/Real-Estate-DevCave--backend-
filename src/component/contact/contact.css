@@ -1,0 +1,42 @@
+.contact {
+    padding-block-end: calc(var(--section-padding) * 2);
+    text-align: center;
+    font-family: 'Arial', sans-serif; 
+  }
+  
+  .contact .section-title {
+    font-weight: var(--fw-500);
+    font-size: 24px; 
+    color: #000; 
+  }
+  
+  .contact .section-text {
+    margin-block: 25px;
+    font-size: 16px; 
+    color: #7d7d7d; 
+  }
+  
+  .contact .btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-inline: auto;
+    padding: 10px 20px; 
+    background-color: #28a745; 
+    color: #fff; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+    text-decoration: none; 
+    font-size: 16px;
+  }
+  
+  .contact .btn:hover {
+    background-color: #218838; 
+  }
+  
+  .contact .btn ion-icon {
+    --ionicon-stroke-width: 50px;
+    font-size: 20px; 
+  }
+  

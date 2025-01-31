@@ -1,0 +1,207 @@
+.header {
+  background-color: var(--white);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: none;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.header.scrolled {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
+}
+
+/* Flex Container for Header Content */
+.container {
+  display: flex;
+  justify-content: space-between; /* Space out logo and menu */
+  align-items: center;
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 0 20px;
+  padding-block: 15px;
+}
+
+.logos h3 {
+  color: var(--liteblack);
+  font-size: 2em;
+  text-shadow: 2px 0px 2px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: background-color 0.5s ease-in-out;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Fully transparent */
+    margin-bottom: 100px; /* Initial offset */
+  }
+  to {
+    opacity: 1; /* Fully visible */
+    margin-bottom: 0; /* Final position */
+  }
+}
+.navbar-list.scrolled {
+  position: absolute;
+  left: 0;
+  padding-bottom: 10px;
+  padding-left: 45px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.20);
+  top: 95px;
+  border-top: solid var(--white);
+  border-radius: 0% 0% 35px 0px;
+  width: 50%;
+  background-color: var(--white);
+  color: var(--white);
+  animation: fadeIn 1s ease-in-out;
+
+}
+
+.navbar.active {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
+  text-align: center;
+  z-index: 3;
+}
+
+/* Navbar Links */
+.navbar-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar-link {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--liteblack);
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar-link:focus,
+.navbar-link:hover {
+  color: var(--black);
+  transform: scale(1.1);
+  border-radius: 5px;
+  border-bottom: 2.5px solid var(--red);
+}
+
+/* Signup Button */
+.btn {
+  font-size: 2rem;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #28a745;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #218838;
+}
+
+/* Nav Toggle Button (visible only in mobile view) */
+.nav-toggle-btn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  z-index: 4;
+}
+
+.menu-icon {
+  display: block;
+}
+
+.nav-toggle-btn.active .menu-icon {
+  display: none;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .signUp {
+    display: none;
+  }
+
+  .navbar.active {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+
+  .navbar-list {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar-link {
+    font-size: 1.8rem;
+    padding: 10px 0;
+  }
+
+  .nav-toggle-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5rem;
+  }
+
+  .navbar-list.scrolled {
+    display: block;
+    padding: 0;
+    top: 2px;
+    align-items: center;
+    border-radius: none;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.signupform{
+   width: 100%;
+   position: absolute;
+   margin-top: 100px;
+   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  /* background-color: black; */
+}
+

@@ -1,0 +1,281 @@
+
+.heroFormWrapper {
+    background-color: rgb(255, 255, 255);
+    margin-top: 5rem;
+    z-index: 0;
+    padding: 10px;
+    width: 80%;
+    min-height: 50vh;
+    /* max-height:60vh; */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-inline: auto;
+    transition: 0.3s;
+  }
+  .heroFormWrapper:hover{
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    border-radius: 16px;
+  }
+  .RenderComponent{
+      margin-top: 80px;
+      height: auto;
+  }
+
+
+  /* Form Tabs */
+  .formTab {
+    display: flex;
+    justify-content: left;
+    border-bottom: 1px solid #4caf50;
+    padding: 10px;
+    gap: 10px;
+    margin-bottom: 2rem;
+  }
+ 
+  /* Tab Button Styles */
+  .tabBtn {
+    padding: 12px 24px;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #102a43;
+    background-color: transparent;
+    border  : solid 1px  #4caf50;;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+   
+  }
+  
+  .tabBtn:hover,
+  .tabBtn:focus {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  /* Active Tab Button */
+  .tabBtn.active {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  /* Form Fields */
+  .heroForm {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .heroForm .inputWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .inputLabel {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: rgba(0, 0, 0, 0.568);
+  }
+
+.inputSearch{
+  max-width: 80%;
+}
+
+  .heroForm .inputWrapper ion-icon {
+    position: absolute;
+    /* transform: translateY(20%); */
+   display: flex;
+   right: 0;
+   align-items: center;
+   width: 20%;
+   height: 50%;
+    color: var(--oxford-blue);
+  }
+  
+  .searchBox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .inputField {
+   
+    padding: 10px 35px 10px 15px; /* Adjust padding for space for the icon */
+    width: 100%;
+    font-size: 16px;
+  }
+  
+  .inputField,
+  .dropdownList {
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .inputField:focus,
+  .dropdownList:focus {
+    border-color: #4caf50;
+  }
+
+  
+  .inputField::placeholder {
+    color: #aaa;
+    font-size: 1.6rem;
+    margin-left: 10px;
+  }
+  
+  /* Search Button */
+  .heroForm .btn {
+    grid-column: span 4;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    background-color: #4caf50;
+    border: none;
+    margin-top: 2rem;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 25%;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .heroForm .btn:hover {
+    background-color: #45a049;
+    box-shadow: 0px 0px 10% rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .heroForm {
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+    .formTab{
+      justify-content: center;
+    }
+    .heroForm .btn {
+      grid-column: span 2;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .heroTitle {
+      font-size: 2.5rem;
+    }
+    .heroForm .btn{
+      width: 100%;
+    }
+  
+    .heroForm {
+      grid-template-columns: 1fr;
+    }
+  
+    .heroForm .btn {
+      grid-column: span 1;
+    }
+  }
+  .RenderComponent{
+            width: 100%;
+    }
+  
+
+    /* buy */
+    .Buy{
+      margin-top:-80px;
+      width: 100%;
+      z-index: 100;
+      padding: 10px;
+      flex-wrap: wrap;
+      position: relative;
+      background-color: var(--white);
+      border-radius: 10px;
+      padding: 20px;
+      color: rgba(0, 0, 0, 0.47);
+  
+  }
+  .Buy> h3{
+      text-align: start;
+      padding: 5px;
+  }
+  
+  .form{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 100%;
+      /* margin-top: 10px; */
+  
+  }
+  .form > div {
+       width: 25%;
+      display: flex;
+      gap: 1rem;
+      justify-content: space-between;
+      flex-direction: column;
+  }
+  .form > div > label{
+     font-weight: 600;
+     font-size: large;
+  }
+
+  .form > div > select{
+      padding: 5px 20px;
+      width: 200px;
+      box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+      outline: none;
+      border-radius: 4px;
+  }
+  .submit{
+      padding:  7px 10px;
+      color:var(--white);
+      font-weight: 600;
+      position: absolute;
+      right: 10%;
+      width: 200px;
+      bottom: -12%;
+       border-radius: 10px;
+      background-color: var(--green-pigment);
+  }
+  
+  @media (max-width:1024px){
+      .Buy{
+          height: auto;
+          width: 90%;
+      }
+      .form>div{
+          width: 100%;
+         gap: 1rem;
+      }
+      .form{
+         gap: 2rem;
+      }
+      .form > div > select{
+          padding: 10px;
+      }
+      .submit{
+          position: relative;
+          width: 50%;
+      }
+  }
+
+
+  .searchBuy{
+    display: flex;
+    /* flex: 1; */
+    width: 70%;
+    margin-top: 10px;
+    justify-content: space-around;
+}
+.serch{
+  margin-top: 10px;
+  justify-content: space-around;
+}

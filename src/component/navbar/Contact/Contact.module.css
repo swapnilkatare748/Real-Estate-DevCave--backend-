@@ -1,0 +1,64 @@
+.Contact{
+    width: 100%;
+    background-color: var(--contact-back);
+    height: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--white);
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.content{
+    display: flex;
+    gap: 4rem;
+    width: 50%;
+    flex: start;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+.links>a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.icon{
+    display: none;
+    padding: 5px 10px;
+    border-radius: 30px;
+    position: absolute;
+    font-size: small;
+    margin-top: 60px;
+    background-color: var(--contact-back);
+    animation: fadIn 3s   ease-in-out;
+}
+
+/* Show the icon on hover */
+.links > a:hover .icon {
+    display: block; 
+    border: 35px;
+    background-color: var(--maximum-red); 
+}
+
+.links>a>i:hover{
+    box-shadow: 0px 0px 5px;
+    
+}
+
+
+
+@media (max-width: 500px)  {
+    .Contact{
+        display: none;
+    
+    }
+}
+

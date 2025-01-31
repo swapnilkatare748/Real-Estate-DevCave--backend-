@@ -1,0 +1,11 @@
+
+.ContactPage{
+    margin-top: 50px;
+    
+}
+.contactcontainer{
+   display: flex;
+   align-items: center;
+   padding: 40px;
+   background-color: #f4f5f78d;
+}

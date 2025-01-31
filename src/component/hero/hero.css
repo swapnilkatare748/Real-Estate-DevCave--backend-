@@ -1,0 +1,223 @@
+  /* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  padding-top: 80px;
+}
+
+.hero-bg {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ), 
+    url('https://codewithsadee.github.io/realvine/assets/images/hero-bg.jpg') center/cover no-repeat; /* Background image with overlay */
+  height: 100vh; /* Full viewport height */
+  display: flex; /* Flexbox for centering content */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  padding: 0 20px; /* Padding for responsiveness */
+  color: #fff; /* White text */
+}
+
+/* Hero Content Container */
+.hero-content {
+  text-align: center; /* Center-align all text */
+  max-width: 900px; /* Restrict width for better readability */
+}
+
+/* Hero Title */
+.hero-title {
+  font-size: 3.5rem; /* Large, impactful font size */
+  font-weight: 700; /* Bold text for emphasis */
+  line-height: 1.2; /* Tight line spacing */
+  margin-bottom: 20px; /* Space below the title */
+  color: #fff; /* White text */
+}
+
+.hero-title .span {
+  color: #4CAF50; /* Highlighted word in green */
+  text-transform: capitalize; /* Capitalize the highlighted word */
+}
+
+/* Hero Text */
+.hero-text {
+  font-size: 1.6rem; /* Medium font size */
+  font-weight: 400; /* Regular font weight */
+  line-height: 1.8; /* Comfortable line spacing */
+  color: #ccc; /* Lighter text color for secondary text */
+  margin-bottom: 40px; /* Space below the text */
+}
+
+/* Form Wrapper */
+.hero-form-wrapper {
+  background-color: white;
+  margin-top: -80px;
+  padding: 20px;
+  width: 90%;
+  max-width: 1100px;
+  border-radius: 16px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin-inline: auto;
+}
+
+/* Form Tabs */
+.form-tab {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #eaeaea;
+  padding: 10px;
+  gap: 10px;
+  
+}
+
+/* Tab Button Styles */
+.tab-btn {
+  padding: 12px 24px;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #102a43;
+  background-color: transparent;
+  border: none;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.tab-btn:hover,
+.tab-btn:focus {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* Active Tab Button */
+.tab-btn.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* Form Fields */
+.hero-form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.hero-form .input-wrapper {
+  /* position: absolute; */
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.input-label {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #102a43;
+}
+
+.hero-form .input-wrapper ion-icon {
+  position: absolute;
+  /* top: 50%; */
+  transform: translateY(20%);
+  left: 2px;
+  margin-bottom: 2px;
+  color: var(--oxford-blue);
+  /* --ionicon-stroke-width: 40px; */
+}
+
+.search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  right: 20px;
+}
+
+.input-field {
+  padding: 10px 35px 10px 15px; /* Adjust padding for space for the icon */
+  width: 100%;
+  font-size: 16px;
+}
+
+
+
+.input-field,
+.dropdown-list {
+  padding: 10px 15px;
+  font-size: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+
+.input-field:focus,
+.dropdown-list:focus {
+  border-color: #4caf50;
+}
+
+
+.input-field::placeholder {
+  color: #aaa;
+  font-size: 1.6rem;
+}
+
+/* Search Button */
+.hero-form .btn {
+  grid-column: span 4;
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.hero-form .btn:hover {
+  background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-form {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+
+  .hero-form .btn {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-form {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-form .btn {
+    grid-column: span 1;
+  }
+}

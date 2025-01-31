@@ -1,0 +1,82 @@
+
+.ContactHero{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #303437;
+    
+}
+
+.content{
+    display: flex;
+    padding: 2em;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+}
+.heading_content{
+    font-size: 4em;
+    text-align: left;
+    color: var(--white);
+    margin-top: -100px;
+    text-shadow: 2px 0px 3px var(--white);
+}
+
+.content>p{
+    width: 80%;
+    height: 80%;
+    text-align: justify;
+    margin-top: 20px;
+    margin-left: 30px;
+    color: var(--white);
+    font-weight: 100;
+    /* text-shadow: 0px 0px 1px var(--white); */
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: italic;
+}
+.img{
+    background-color: azure;
+    width: 25%;  
+    height: 60%;
+    position: absolute;
+    top: 70px;
+    right: 100px;
+    box-shadow: 0 0px 30px var(--white); /* Adds the shadow effect */
+
+   
+}
+.img img{
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+}
+.connect{
+    position: absolute;
+    bottom: 20px;
+    opacity: 1;
+    right: 30%;
+    border: none;
+    padding: 10px 50px;
+    border-radius: 10px;
+    color: var(--white);
+    background-color: #218838;
+    transition: 0.2s;
+}
+.connect:hover{
+    box-shadow: 0px 2px 10px ;
+    border: 2px solid var(--white);
+
+}
+
+@media (max-width:1024px){
+    .img{
+     display: none;
+    }
+    .heading_content{
+        font-size: 2.5em;
+    }
+    .content{
+        width: 90%;
+    }
+}

@@ -1,0 +1,157 @@
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    position: relative;
+    background-image: url('../../assets/Hero/hero-bg.jpg');
+    transition: background-image 0.5s ease-in-out;
+  }
+
+  .hero.fade {
+    opacity: 0.5;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .hero > h1 {
+    font-size: 3.3em;
+    font-weight: 600;
+  }
+  
+  .hero > h5 {
+    font-weight: 300;
+  }
+  
+  .input_box {
+    background-color: white;
+    width: 40%;
+    height: 50px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 4px 4px 5px 5px rgba(0, 0, 0, 0.315);
+  }
+  
+  .input_box >form> input {
+    border: none;
+    height: 100%;
+    width: 90%;
+    cursor: text;
+    outline: none;
+    margin-left: 10px;
+    color: rgb(136, 128, 128);
+    font-size: 1em;
+  }
+  .input_box>form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    height: 100%;
+    width: 3em;
+  }
+  
+  .icon > i:hover {
+    cursor: pointer;
+    color: black;
+  }
+  
+  /* Slider buttons */
+  .sliderButtons {
+    position: absolute;
+    bottom: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  
+  .sliderButtons button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-weight: 500;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .sliderButtons button:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+  }
+  
+.hero > h1,
+.hero > h5,
+.input_box{
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent 0.5s linear 1 forwards;
+}
+
+@keyframes showContent{
+    to{
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+}
+
+.hero > h1{animation-delay: 0.7s;}
+.hero > h5{animation-delay: 0.5s;}
+.input_box{animation-delay: 0.3s;}
+
+  @media (max-width: 1075px) {
+     .hero>h1{
+      width: 80%;
+      text-align: center;
+     }
+     .hero>h5{
+      text-align: justify;
+      width: 80%;
+      
+     }
+  }
+
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .input_box {
+      width: 95%;
+      position: absolute;
+      top: 9rem;
+    }
+  }
+  
+  @media (max-width: 375px) {
+    .hero > h1 {
+      font-size: 2em;
+      font-weight: 600;
+      width: 80%;
+    }
+  }
+  

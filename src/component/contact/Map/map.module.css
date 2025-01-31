@@ -1,0 +1,79 @@
+.Map{
+    display: flex;
+    align-items:start ;
+    width: 90%;
+    height: 80vh;
+    margin-top: 100px;
+    margin: 40px auto;
+    border-radius: 20px;
+    justify-content: space-between;
+    color: var(--contact-back);
+    transition:  0.3s ease;
+
+}
+
+.Map>iframe{
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px ;
+}
+
+.addres{
+    margin-top: 50px;
+   width:40% ;
+}
+.addres>h3{
+    font-size: 3rem;
+    font-style: italic;
+    width: max-content;
+}
+.addres>h3::after{
+    content: ".ltd";
+    width: 30px ;
+    height: 30px;
+    color: red;
+}
+.addres>p{
+    margin: 10px;
+    width: 100%;
+    text-align: justify;
+}
+.cities{
+    margin-top: 10%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+.cit{
+    margin: 15px 5px;
+    cursor: pointer;
+}
+.cit:hover{
+    color: rgb(9, 7, 11);
+    text-shadow: 0.1px 1px ;
+}
+.cit:hover a>i{
+    color: red;
+    font-size: large;
+}
+.cit >a>i{
+    margin-right: 5px;
+}
+
+@media (max-width:1024px){
+    .Map{
+        flex-wrap: wrap;
+        height: auto;
+        width: 80%;
+        padding: 0;
+    }
+    .Map>iframe{
+        width: 100%;
+    }
+    .addres{
+       width: 90%;
+    }
+    .cities{
+        flex-wrap: wrap;
+    }
+}

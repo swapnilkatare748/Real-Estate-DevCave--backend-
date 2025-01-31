@@ -1,0 +1,33 @@
+.details-container {
+    text-align: center;
+    margin: 50px auto; /* Centers the container horizontally */
+    max-width: 1200px; /* Restrict the container width */
+    padding: 0 20px; /* Add padding on both sides for spacing */
+    box-sizing: border-box; /* Include padding in the width */
+  }
+  
+  .details-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .details-container p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .details-container .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0073e6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .details-container .btn:hover {
+    background-color: #005bb5;
+  }
+  

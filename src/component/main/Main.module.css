@@ -1,0 +1,9 @@
+.containar{
+  display: flex;
+}
+.Leftside{
+    width: 60%;
+}
+.Rightside{
+    width: 40%;
+}

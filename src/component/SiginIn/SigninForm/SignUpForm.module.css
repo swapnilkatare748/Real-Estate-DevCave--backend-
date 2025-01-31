@@ -1,0 +1,161 @@
+.container {
+    position: absolute;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 80vh; */
+    height: auto;
+    width: 50%;
+    background: linear-gradient(135deg, #303437,var(--white));
+    padding: 10px;
+    z-index: 1000;
+    border-radius: 15px;
+    transition: 0.5s;
+  }
+
+  
+  .formWrapper {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 700px;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #6c63ff;
+    box-shadow: 0 0 5px rgba(108, 99, 255, 0.5);
+  }
+  
+  .captcha {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .captchaCode {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    background: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .refreshCaptcha {
+    background: none;
+    border: none;
+    color: #6c63ff;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .refreshCaptcha:hover {
+    text-decoration: underline;
+  }
+  
+  .socialButtons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .googleButton,
+  .facebookButton {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    background: #6c63ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .facebookButton {
+    background: #3b5998;
+  }
+  
+  .googleButton:hover,
+  .facebookButton:hover {
+    opacity: 0.9;
+  }
+  
+  .signUpButton {
+    width: 100%;
+    padding: 10px;
+    background: #6c63ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .signUpButton:hover {
+    background: #5941d7;
+  }
+  
+  .error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .closebutton{
+         color: var(--contact-back);
+         position: absolute;
+         font-size: 1.5em;
+         padding: 5px;
+         right: 5%;
+         top: 5%;
+  }
+  .closebutton:hover{
+    color: var(--maximum-red);
+    transition: 0.3s;
+  }
+
+  @media (max-width:1024px){
+    .container{
+      width: 80%;
+      
+    }
+  }
+
+  @media (max-width:704px){
+    .container{
+      width: 100%;
+      
+    }
+  }
